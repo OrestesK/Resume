@@ -1,0 +1,177 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% CUSTOM packages
+\usepackage{fontawesome5}
+\usepackage{ulem}
+
+% sans-serif
+% \usepackage{mathptmx}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage[Adobe Garamond]
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% MARGINS
+\usepackage[a4paper,bottom = 0.2in,left = 0.3in,right = 0.3in,top = 0.3in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}{\titlerule[2pt]}\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------HEADING------------
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Orestes Kassian} \\ \vspace{4pt}
+    \small 
+    \faPhone\ 585-404-6131 ~
+    \href{oresteskassian@gmail.com}{\faEnvelope\ \uline{oresteskassian.gmail.com}} ~
+    \href{https://linkedin.com/in/orestes-kassian}{\faLinkedin\ \uline{orestesk-kassian}} ~
+    \href{https://github.com/OrestesK}{\faGithub\ \uline{OrestesK}}
+\end{center}
+\vspace{-22pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Rochester Institute of Technology}{ Aug. 2022 -- May 2026}
+        {Bachelor of Science | Computer Science $|$ Minor in Mathematics, GIS Immersion}{ Rochester, NY}
+    \vspace{-8pt}
+    \resumeSubSubheading
+    {Dean’s List All Semesters $|$ GPA: 3.9}{}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {RangerLabs startup}{ May 2023 - Aug. 2023}
+        {Software Engineer Intern}{ Hybrid $|$ Rochester, NY}
+    \resumeItemListStart
+        \resumeItem{Developed a research-oriented testing framework for AI developers at startups}
+        \resumeItem{Presented MPVs in client meetings}
+        \resumeItem{Created a Postgres database, implemented with Prisma backend}
+        \resumeItem{Incorporated AWS S3 Buckets, EC2 Instances \& RDS}
+        \resumeItem{Used Baseten \& HuggingFace APIs to deploy latest LLM models}
+        \resumeItem{Helped develop demo used as grader for LegalBench LLM hackathon}
+        \resumeItem{Greatly reduced run times by optimized codebase structure}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {JDocs startup}{ Feb. 2023 - March 2023}
+        {Software Engineer}{ Rochester, NY}
+    \resumeItemListStart
+        \resumeItem{Developed secure \& reliable C backend for extracting mobile data}
+        \resumeItem{Created a multi-platform deployment architecture using GNU Autotools to easily distribute cross-platform}
+        \resumeItem{Set up a CI/CD pipeline for building & deploying mission-critical releases to customers using Github Actions}
+        \resumeItem{Developed secure \& reliable C backend for extracting mobile data}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{PeerPet} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{BrickHack 2022, 24H Hackathon}
+    \resumeItemListStart
+
+      \resumeItemListEnd
+  \resumeProjectHeading
+      {\textbf{MultiPop} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{Personal Project, 2022}
+      \resumeItemListStart
+      \resumeItemListEnd
+  \resumeProjectHeading
+      {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{Semester Long Project, 2023}
+      \resumeItemListStart
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}}
